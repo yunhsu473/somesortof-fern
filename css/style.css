@@ -1,0 +1,139 @@
+/*-----------------body & wrap --------------------*/
+
+body .wrap {
+    font-family: Microsoft Jhenghei;
+    /* background-color: rgb(88, 82, 82); */
+}
+
+/*----------------- navBar --------------------*/
+
+
+.jumbotron {
+    height: 650px;
+    background-image: url(../images/brand.png);
+    background-color: rgb(54, 45, 45);
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    height: 200px;
+    background-color: rgba(115, 109, 109, 0.918);
+    text-align: center;
+    padding-top: 60px;
+    color: rgb(241, 224, 202);
+    font-size: 1.5em;
+}
+
+.list-group {
+    margin-left: 60%;
+    margin-top: 30%;
+}
+
+.list-group li {
+    background-color: rgba(115, 109, 109, 0.918);
+    font-size: 1.3em;
+}
+
+.list-group li:hover {
+    border: 1px solid rgb(241, 224, 202);
+    background-color: rgba(47, 43, 43, 0.918);
+
+}
+
+.list-group li a {
+    text-decoration: none;
+    color: rgb(241, 224, 202);
+    padding: 10px;
+
+}
+
+header nav {
+    font-family: Microsoft Jhenghei;
+}
+
+nav h2 {
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-top: 8px;
+}
+
+/* --------intro-introduce-------- */
+.designer {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.designImg {
+    background-image: url(../images/designer.png);
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-right: 50px;
+    border-radius: 50%;
+}
+
+.designer h3 {
+    margin-bottom: 30px;
+}
+
+.designer h4 {
+    margin-top: 60px;
+}
+
+.designer p {
+    margin-top: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.caricature {
+    width: 80%;
+    margin: 10px auto;
+}
+
+
+.slider {
+    width: 500px;
+    height: 700px;
+    margin: 20px auto;
+    transition: all 2s ease 2s;
+}
+
+/* -------product--------- */
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+
+
+/* --------footer------- */
+footer {
+    height: 50px;
+    background-color: rgba(64, 60, 60, 0.918);
+}
+
+footer p {
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: antiquewhite;
+    text-decoration: none;
+}
