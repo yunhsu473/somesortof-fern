@@ -1,4 +1,8 @@
 /*-----------------body & wrap --------------------*/
+html,
+body {
+    scroll-behavior: smooth;
+}
 
 body .wrap {
     font-family: Microsoft Jhenghei;
@@ -53,6 +57,136 @@ body .wrap {
     color: rgb(241, 224, 202);
     padding: 10px;
 
+}
+
+/* ---------images-------- */
+.img1 {
+    background-image: url(../images/brand1.png);
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px 5px rgba(51, 51, 51, 0.5) inset;
+    background-size: cover;
+    position: absolute;
+    bottom: 48px;
+    left: 182px;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+}
+
+.img1:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.img1 p {
+    display: none;
+    text-align: center;
+    /* padding-top: 500px; */
+    overflow: hidden;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+}
+
+.img1:hover p {
+    display: block;
+    margin-top: 40%;
+}
+
+.img1 a {
+    font-size: 2.5em;
+    color: rgb(255, 255, 4);
+    text-decoration: none;
+}
+
+.img1 a:hover {
+    color: rgb(242, 255, 0);
+    text-decoration: none;
+}
+
+.img2 {
+    background-image: url(../images/brand2.png);
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px 5px rgba(51, 51, 51, 0.5) inset;
+    background-size: cover;
+    position: absolute;
+    top: 135px;
+    left: 545px;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+}
+
+.img2:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.img2 p {
+    display: none;
+    text-align: center;
+    /* padding-top: 500px; */
+    overflow: hidden;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+}
+
+.img2:hover p {
+    display: block;
+    margin-top: 40%;
+}
+
+.img2 a {
+    font-size: 2em;
+    color: rgb(255, 255, 4);
+    text-decoration: none;
+}
+
+.img2 a:hover {
+    color: rgb(242, 255, 0);
+    text-decoration: none;
+}
+
+.img3 {
+    background-image: url(../images/brand4.png);
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px 5px rgba(51, 51, 51, 0.5) inset;
+    background-size: cover;
+    position: absolute;
+    top: 170px;
+    right: 320px;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+}
+
+.img3:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.img3 p {
+    display: none;
+    text-align: center;
+    /* padding-top: 500px; */
+    overflow: hidden;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+}
+
+.img3:hover p {
+    display: block;
+    margin-top: 40%;
+}
+
+.img3 a {
+    font-size: 2.5em;
+    color: rgb(255, 255, 4);
+    text-decoration: none;
+}
+
+.img3 a:hover {
+    color: rgb(242, 255, 0);
+    text-decoration: none;
 }
 
 /* --------nav------- */
