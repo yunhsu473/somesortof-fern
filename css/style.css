@@ -76,30 +76,29 @@ body .wrap {
 
 .img1:hover {
     transform: scale(1.2, 1.2);
+    background: rgba(255, 255, 255, 0.66);
 }
 
-.img1 p {
-    display: none;
-    text-align: center;
-    /* padding-top: 500px; */
-    overflow: hidden;
-    transform: scale(1, 1);
-    transition: all 0.5s ease-out;
-}
-
-.img1:hover p {
+.img1:hover a {
     display: block;
-    margin-top: 40%;
 }
 
 .img1 a {
     font-size: 2.5em;
-    color: rgb(255, 255, 4);
+    color: #000;
     text-decoration: none;
+    /* ---- */
+    display: none;
+    text-align: center;
+    padding-top: 90px;
+    overflow: hidden;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+    z-index: 99;
 }
 
 .img1 a:hover {
-    color: rgb(242, 255, 0);
+    color: #000;
     text-decoration: none;
 }
 
@@ -119,30 +118,29 @@ body .wrap {
 
 .img2:hover {
     transform: scale(1.2, 1.2);
+    background: rgba(255, 255, 255, 0.66);
 }
 
-.img2 p {
-    display: none;
-    text-align: center;
-    /* padding-top: 500px; */
-    overflow: hidden;
-    transform: scale(1, 1);
-    transition: all 0.5s ease-out;
-}
-
-.img2:hover p {
+.img2:hover a {
     display: block;
-    margin-top: 40%;
 }
 
 .img2 a {
-    font-size: 2em;
-    color: rgb(255, 255, 4);
+    font-size: 2.5em;
+    color: #000;
     text-decoration: none;
+    /* ---- */
+    display: none;
+    text-align: center;
+    padding-top: 80px;
+    overflow: hidden;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+    z-index: 98;
 }
 
 .img2 a:hover {
-    color: rgb(242, 255, 0);
+    color: #000;
     text-decoration: none;
 }
 
@@ -162,30 +160,29 @@ body .wrap {
 
 .img3:hover {
     transform: scale(1.2, 1.2);
+    background: rgba(255, 255, 255, 0.66);
 }
 
-.img3 p {
-    display: none;
-    text-align: center;
-    /* padding-top: 500px; */
-    overflow: hidden;
-    transform: scale(1, 1);
-    transition: all 0.5s ease-out;
-}
-
-.img3:hover p {
+.img3:hover a {
     display: block;
-    margin-top: 40%;
 }
 
 .img3 a {
-    font-size: 2.5em;
-    color: rgb(255, 255, 4);
+    font-size: 3em;
+    color: rgb(10, 10, 10);
     text-decoration: none;
+    /* ---- */
+    display: none;
+    text-align: center;
+    padding-top: 80px;
+    overflow: hidden;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+    z-index: 99;
 }
 
 .img3 a:hover {
-    color: rgb(242, 255, 0);
+    color: rgb(17, 17, 17);
     text-decoration: none;
 }
 
@@ -194,8 +191,8 @@ body .wrap {
 header nav {
     font-family: Microsoft Jhenghei;
     /* background-image: url(../images/nav.jpg); */
-    background-color: rgba(68, 64, 64, 0.918);
-    opacity: 0.5;
+    background-color: rgba(24, 23, 23, 0.918);
+    opacity: 0.8;
 }
 
 nav h2 {
@@ -205,10 +202,7 @@ nav h2 {
 }
 
 /* --------intro-introduce-------- */
-/* #introduce {
-    background-image: url(../images/intro_back.jpg);
-    background-size: cover;
-} */
+
 
 .designer {
     width: 90%;
@@ -264,14 +258,46 @@ nav h2 {
 }
 
 /* -------product--------- */
-.product {
+
+.logo {
+    height: 200px;
+    /* width: 70%; */
+    background-image: url(../images/logo.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 20%;
+}
+
+.row {
+    margin: 10px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    justify-content: flex-start;
     padding: 20px;
 }
 
+.card {
+    margin: 25px;
+}
+
+.card-img-top {
+    height: 400px;
+    transition: all 0.5s ease-out;
+}
+
+
+.card-img-top:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.card-text {
+    height: 160px;
+    font-size: 0.9em;
+}
+
+.card-text span {
+    font-size: 1.1em;
+}
 
 /* -----------news-------- */
 #news .accordion {
