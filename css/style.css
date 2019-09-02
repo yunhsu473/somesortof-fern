@@ -60,139 +60,99 @@ body .wrap {
 }
 
 /* ---------images-------- */
-.img1 {
-    background-image: url(../images/brand1.png);
-    width: 260px;
-    height: 260px;
+.jumbotron div {
     border-radius: 50%;
     box-shadow: 3px 3px 15px 5px rgba(51, 51, 51, 0.5) inset;
     background-size: cover;
-    position: absolute;
-    bottom: 48px;
-    left: 182px;
     transform: scale(1, 1);
     transition: all 0.5s ease-out;
 }
 
-.img1:hover {
-    transform: scale(1.2, 1.2);
-    background: rgba(255, 255, 255, 0.66);
-}
-
-.img1:hover a {
-    display: block;
-}
-
-.img1 a {
+.jumbotron a {
     font-size: 2.5em;
     color: #000;
     text-decoration: none;
     /* ---- */
     display: none;
     text-align: center;
-    padding-top: 90px;
     overflow: hidden;
     transform: scale(1, 1);
     transition: all 0.5s ease-out;
     z-index: 99;
 }
 
-.img1 a:hover {
+.jumbotron div:hover {
+    transform: scale(1.2, 1.2);
+    background: rgba(255, 255, 255, 0.66);
+}
+
+.jumbotron div:hover a {
+    display: block;
+}
+
+.jumbotron a:hover {
     color: #000;
     text-decoration: none;
+
+}
+
+.img1 {
+    background-image: url(../images/brand1.png);
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    bottom: 48px;
+    left: 182px;
+}
+
+.img1 a {
+    padding-top: 90px;
 }
 
 .img2 {
     background-image: url(../images/brand2.png);
     width: 210px;
     height: 210px;
-    border-radius: 50%;
-    box-shadow: 3px 3px 15px 5px rgba(51, 51, 51, 0.5) inset;
-    background-size: cover;
     position: absolute;
     top: 135px;
     left: 545px;
-    transform: scale(1, 1);
-    transition: all 0.5s ease-out;
-}
-
-.img2:hover {
-    transform: scale(1.2, 1.2);
-    background: rgba(255, 255, 255, 0.66);
-}
-
-.img2:hover a {
-    display: block;
 }
 
 .img2 a {
-    font-size: 2.5em;
-    color: #000;
-    text-decoration: none;
-    /* ---- */
-    display: none;
-    text-align: center;
     padding-top: 80px;
-    overflow: hidden;
-    transform: scale(1, 1);
-    transition: all 0.5s ease-out;
-    z-index: 98;
-}
-
-.img2 a:hover {
-    color: #000;
-    text-decoration: none;
 }
 
 .img3 {
-    background-image: url(../images/brand4.png);
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    box-shadow: 3px 3px 15px 5px rgba(51, 51, 51, 0.5) inset;
-    background-size: cover;
+    background-image: url(../images/brand3.png);
+    width: 170px;
+    height: 170px;
     position: absolute;
-    top: 170px;
-    right: 320px;
-    transform: scale(1, 1);
-    transition: all 0.5s ease-out;
-}
-
-.img3:hover {
-    transform: scale(1.2, 1.2);
-    background: rgba(255, 255, 255, 0.66);
-}
-
-.img3:hover a {
-    display: block;
+    top: 105px;
+    left: 155px;
 }
 
 .img3 a {
-    font-size: 3em;
-    color: rgb(10, 10, 10);
-    text-decoration: none;
-    /* ---- */
-    display: none;
-    text-align: center;
-    padding-top: 80px;
-    overflow: hidden;
-    transform: scale(1, 1);
-    transition: all 0.5s ease-out;
-    z-index: 99;
+    padding-top: 50px;
 }
 
-.img3 a:hover {
-    color: rgb(17, 17, 17);
-    text-decoration: none;
+.img4 {
+    background-image: url(../images/brand4.png);
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 170px;
+    right: 320px;
+}
+
+.img4 a {
+    padding-top: 100px;
 }
 
 /* --------nav------- */
 
 header nav {
     font-family: Microsoft Jhenghei;
-    /* background-image: url(../images/nav.jpg); */
-    background-color: rgba(24, 23, 23, 0.918);
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 nav h2 {
@@ -228,6 +188,7 @@ nav h2 {
     width: 600px;
     float: right;
     margin-right: 50px;
+    background-repeat: no-repeat;
 }
 
 .designer h4 {
@@ -251,10 +212,10 @@ nav h2 {
 .slider {
     width: 500px;
     height: 700px;
-    margin: 20px auto;
-    transition: all 2s ease 2s;
-    float: right;
-    margin-right: 50px;
+    margin: 50px 30%;
+    /* transition: all 2s ease 2s; */
+    transition: transform 2s ease,
+        opacity .5s ease-out
 }
 
 /* -------product--------- */
@@ -335,6 +296,61 @@ nav h2 {
 #news button {
     width: 1200px;
     text-align: left;
+}
+
+/* -----------cart------------ */
+#cart .card-header {
+    margin: 5px 10%;
+}
+
+#cart .card-header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#cart .card-header li {
+    flex: 1;
+}
+
+#cart .mb-3 {
+    margin: 5px 10%;
+}
+
+#cart .mb-3 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#cart .mb-3 li {
+    margin: 5px 10px;
+    flex: 1;
+    margin-top: 50px;
+}
+
+#cart .mb-3 img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#cart .btn {
+    height: 40px;
+    width: 60px;
+}
+
+#cart .total {
+    float: right;
+    margin: 20px 5px;
+}
+
+#cart .totalBtn {
+    float: right;
+    margin: 15px;
+    margin-right: 10%;
 }
 
 /* --------footer------- */
