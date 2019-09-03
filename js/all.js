@@ -88,9 +88,9 @@ function statusChangeCallback(response) { // Called with the results from FB.get
     if (response.status === 'connected') { // Logged into your webpage and Facebook.使用者已授權開始應用程式
         // testAPI();
         start();
-        loginBtn.style.displat = "none";
+        loginBtn.style.display = "none";
     } else { // Not logged into your webpage or we are unable to tell.使用者未授權，鼓勵使用者授權
-        loginBtn.style.displat = "block";
+        loginBtn.style.display = "block";
     }
 }
 
@@ -138,7 +138,7 @@ function start() {
     FB.api('/me?fields=id,name,email, gender', function (response) {
         console.log(response);
         let showFb = document.querySelector('.showFb');
-        showFb.innerHTML = response.name + "<img src='http://graph.facebook.com/" + response.id + "/picture' />";
+        showFb.innerHTML = "<img src='http://graph.facebook.com/" + response.id + "/picture' />";
     });
 }
 
