@@ -97,7 +97,7 @@ function login() {
     FB.login(function (response) {
         statusChangeCallback(response);
     }, {
-        scope: "email, user_gender, user_posts, manage_pages, publish_pages"
+        scope: "email, user_gender, user_posts"
     })
 };
 
