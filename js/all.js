@@ -85,7 +85,8 @@ function statusChangeCallback(response) { // Called with the results from FB.get
     console.log('statusChangeCallback');
     console.log(response); // The current login status of the person.
     if (response.status === 'connected') { // Logged into your webpage and Facebook.使用者已授權開始應用程式
-        testAPI();
+        // testAPI();
+        start();
     } else { // Not logged into your webpage or we are unable to tell.使用者未授權，鼓勵使用者授權
         document.getElementById('status').innerHTML = 'Please log ' +
             'into this webpage.';
@@ -96,7 +97,7 @@ function login() {
     FB.login(function (response) {
         statusChangeCallback(response);
     }, {
-        scope: "email, user_gender, user_posts"
+        scope: "email, public_profile, user_gender, user_posts"
     })
 };
 
@@ -131,12 +132,22 @@ window.fbAsyncInit = function () {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-
-function testAPI() { // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function (response) {
-        console.log('Successful login for: ' + response.name);
-        document.getElementById('status').innerHTML =
-            'Thanks for logging in, ' + response.name + '!';
+function start() {
+    //呼叫 Graph Api ： FB.api(連線網址，回呼函示(結果))
+    FB.api('/me?fields=id,name,email, gender', function (response) {
+        console.log(response);
+        let show = document.querySelector('.showFb');
+        show.innerHTML = "<img src='http://graph.facebook.com/" + response.id +
+            "/picture?type=large' />";
     });
 }
+
+
+// function testAPI() { // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+//     console.log('Welcome!  Fetching your information.... ');
+//     FB.api('/me', function (response) {
+//         console.log('Successful login for: ' + response.name);
+//         document.getElementById('status').innerHTML =
+//             'Thanks for logging in, ' + response.name + '!';
+//     });
+// }

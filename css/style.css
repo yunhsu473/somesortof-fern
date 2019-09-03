@@ -133,11 +133,10 @@ body .wrap {
 
 .img3 button {
     padding-top: 30px;
-    font-size: 2em;
+    padding-left: 30px;
     background: transparent;
     border: none;
-
-    font-size: 2.5em;
+    font-size: 2em;
     color: rgb(65, 155, 9);
     text-decoration: none;
     /* ---- */
@@ -179,6 +178,17 @@ nav h2 {
     font-size: 1.2em;
     font-weight: bolder;
     margin-top: 8px;
+}
+
+.loginBtn {
+    float: right;
+}
+
+.showFb img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: right;
 }
 
 /* --------intro-introduce-------- */
