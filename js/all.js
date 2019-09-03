@@ -50,13 +50,13 @@ function addToCart(id, title, price) {
 
 
 function render() {
-    let list = document.querySelector('.mb-3');
-    list.innerHTML = '';
+    let buylist = document.querySelector('.mb-3');
+    buylist.innerHTML = '';
     let product;
     let total = 0;
     for (let i = 0; i < cart.length; i++) {
         product = cart[i];
-        list.innerHTML +=
+        buylist.innerHTML +=
             `<ul>
                 <li style="margin-top: 20px;"><img src="../images/product${product.id}.jpg" alt=""></li>
                 <li>${product.title}</li>
@@ -136,9 +136,8 @@ function start() {
     //呼叫 Graph Api ： FB.api(連線網址，回呼函示(結果))
     FB.api('/me?fields=id,name,email, gender', function (response) {
         console.log(response);
-        let show = document.querySelector('.showFb');
-        show.innerHTML = "<img src='http://graph.facebook.com/" + response.id +
-            "/picture?type=large' />";
+        let showFb = document.querySelector('.showFb');
+        showFb.innerHTML = response.name + "<img src='http://graph.facebook.com/" + response.id + "/picture' />";
     });
 }
 
