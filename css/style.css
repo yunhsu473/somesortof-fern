@@ -83,7 +83,7 @@ body .wrap {
 
 .jumbotron div:hover {
     transform: scale(1.2, 1.2);
-    background: rgba(255, 255, 255, 0.66);
+    background: rgba(255, 255, 255, 0.823);
 }
 
 .jumbotron div:hover a {
@@ -106,7 +106,9 @@ body .wrap {
 }
 
 .img1 a {
-    padding-top: 90px;
+    padding-top: 70px;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 .img2 {
@@ -131,25 +133,11 @@ body .wrap {
     left: 155px;
 }
 
-.img3 button {
-    padding-top: 30px;
-    padding-left: 30px;
-    background: transparent;
-    border: none;
-    font-size: 1.5em;
-    color: rgb(65, 155, 9);
-    text-decoration: none;
-    /* ---- */
-    display: none;
-    text-align: center;
-    overflow: hidden;
-    transform: scale(1, 1);
-    transition: all 0.5s ease-out;
-    z-index: 99;
-
+.img3 a {
+    padding-top: 50px;
 }
 
-.img3:hover button {
+.img3:hover a {
     display: block;
 }
 
