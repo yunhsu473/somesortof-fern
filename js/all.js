@@ -84,13 +84,22 @@ window.addEventListener('DOMContentLoaded', initCart);
 function statusChangeCallback(response) { // Called with the results from FB.getLoginStatus().
     console.log('statusChangeCallback');
     console.log(response); // The current login status of the person.
-    if (response.status === 'connected') { // Logged into your webpage and Facebook.
+    if (response.status === 'connected') { // Logged into your webpage and Facebook.使用者已授權開始應用程式
         testAPI();
-    } else { // Not logged into your webpage or we are unable to tell.
+    } else { // Not logged into your webpage or we are unable to tell.使用者未授權，鼓勵使用者授權
         document.getElementById('status').innerHTML = 'Please log ' +
             'into this webpage.';
     }
 }
+
+function login() {
+    e.preventDefault();
+    FB.login(function (response) {
+        statusChangeCallback(response);
+    }, {
+        scope: "email, user_gender, user_posts, manage_pages, publish_pages"
+    })
+};
 
 function checkLoginState() { // Called when a person is finished with the Login Button.
     FB.getLoginStatus(function (response) { // See the onlogin handler
@@ -99,6 +108,7 @@ function checkLoginState() { // Called when a person is finished with the Login 
 }
 
 window.fbAsyncInit = function () {
+    //初始化 fb 套件
     FB.init({
         appId: '488003245282589',
         cookie: true, // Enable cookies to allow the server to access the session.
@@ -106,13 +116,13 @@ window.fbAsyncInit = function () {
         version: 'v4.0' // Use this Graph API version for this call.
     });
 
-
+    //偵測使用者是否已授權
     FB.getLoginStatus(function (response) { // Called after the JS SDK has been initialized.
         statusChangeCallback(response); // Returns the login status.
     });
 };
 
-
+//匿名函式立刻呼叫，這段的目的是載入Facebook JavaScript SDK， 載入完畢後固定呼叫 window.fbAsynsInit()
 (function (d, s, id) { // Load the SDK asynchronously
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
