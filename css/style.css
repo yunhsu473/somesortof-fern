@@ -131,10 +131,29 @@ body .wrap {
     left: 155px;
 }
 
-.img3 a {
+.img3 button {
     padding-top: 45px;
     font-size: 2em;
+    background: transparent;
+    border: none;
+
+    font-size: 2.5em;
+    color: rgb(65, 155, 9);
+    text-decoration: none;
+    /* ---- */
+    display: none;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(1, 1);
+    transition: all 0.5s ease-out;
+    z-index: 99;
+
 }
+
+.img3:hover button {
+    display: block;
+}
+
 
 .img4 {
     background-image: url(../images/brand4.png);

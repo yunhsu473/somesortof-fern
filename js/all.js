@@ -101,11 +101,11 @@ function login() {
     })
 };
 
-function checkLoginState() { // Called when a person is finished with the Login Button.
-    FB.getLoginStatus(function (response) { // See the onlogin handler
-        statusChangeCallback(response);
-    });
-}
+// function checkLoginState() { // Called when a person is finished with the Login Button.
+//     FB.getLoginStatus(function (response) { // See the onlogin handler
+//         statusChangeCallback(response);
+//     });
+// }
 
 window.fbAsyncInit = function () {
     //初始化 fb 套件
