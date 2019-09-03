@@ -70,7 +70,7 @@ body .wrap {
 
 .jumbotron a {
     font-size: 2.5em;
-    color: #000;
+    color: rgb(65, 155, 9);
     text-decoration: none;
     /* ---- */
     display: none;
@@ -91,7 +91,7 @@ body .wrap {
 }
 
 .jumbotron a:hover {
-    color: #000;
+    color: rgb(65, 155, 9);
     text-decoration: none;
 
 }
@@ -132,7 +132,8 @@ body .wrap {
 }
 
 .img3 a {
-    padding-top: 50px;
+    padding-top: 45px;
+    font-size: 2em;
 }
 
 .img4 {
