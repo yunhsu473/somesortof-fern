@@ -93,7 +93,6 @@ function statusChangeCallback(response) { // Called with the results from FB.get
 }
 
 function login() {
-    e.preventDefault();
     FB.login(function (response) {
         statusChangeCallback(response);
     }, {
