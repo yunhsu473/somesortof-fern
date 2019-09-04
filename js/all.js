@@ -110,8 +110,8 @@ function login() {
 function logout() {
     FB.logout(function (response) {
         // user is now logged out
+        statusChangeCallback(response);
         console.log(response);
-        loginBtn.style.display = "block";
     });
 }
 
