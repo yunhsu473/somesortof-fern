@@ -141,8 +141,6 @@ function start() {
         showFb.innerHTML = "<img src='http://graph.facebook.com/" + response.id + "/picture' />";
     });
 }
-
-
 // function testAPI() { // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
 //     console.log('Welcome!  Fetching your information.... ');
 //     FB.api('/me', function (response) {
@@ -151,3 +149,30 @@ function start() {
 //             'Thanks for logging in, ' + response.name + '!';
 //     });
 // }
+
+// --------------firebase---------
+
+var firebaseConfig = {
+    apiKey: "api-key",
+    authDomain: "project-id.firebaseapp.com",
+    databaseURL: "https://project-id.firebaseio.com",
+    projectId: "project-id",
+    storageBucket: "project-id.appspot.com",
+    messagingSenderId: "sender-id",
+    appID: "app-id",
+};
+firebase.initializeApp(firebaseConfig);
+let provider = new firebase.auth.FacebookAuthProvider();
+provider.addScope('email', 'user_birthday');
+
+function login() {
+    firebase.auth().signInWithPopup(provider).then(function (result) {
+        // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        console.log(user);
+    }).catch(function (error) {
+        console.log(error);
+    });
+}
