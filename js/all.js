@@ -194,7 +194,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 //support Facebook login
 let provider = new firebase.auth.FacebookAuthProvider();
-provider.addScope('name', 'email', 'user_birthday');
+provider.addScope('email');
 
 function login() {
     firebase.auth().signInWithPopup(provider).then(function (result) {
@@ -202,6 +202,10 @@ function login() {
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
+        let showFb = document.querySelector('.showFb');
+        showFb.style.display = "block";
+        let loginBtn = document.querySelector('.loginBtn');
+        loginBtn.style.display = "none";
         console.log(user);
     }).catch(function (error) {
         console.log(error);
