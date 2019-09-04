@@ -153,13 +153,13 @@ function start() {
 // --------------firebase---------
 
 var firebaseConfig = {
-    apiKey: "api-key",
-    authDomain: "project-id.firebaseapp.com",
-    databaseURL: "https://project-id.firebaseio.com",
-    projectId: "project-id",
-    storageBucket: "project-id.appspot.com",
-    messagingSenderId: "sender-id",
-    appID: "app-id",
+    apiKey: "AIzaSyBwYrFFXTDqxvjcp2eeYzXF7t719WfxT6g",
+    authDomain: "somesortof-fern.firebaseapp.com",
+    databaseURL: "https://somesortof-fern.firebaseio.com",
+    projectId: "somesortof-fern",
+    storageBucket: "",
+    messagingSenderId: "497299808743",
+    appId: "1:497299808743:web:f9fdb75c5725bc40"
 };
 firebase.initializeApp(firebaseConfig);
 
