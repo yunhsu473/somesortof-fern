@@ -162,6 +162,17 @@ var firebaseConfig = {
     appID: "app-id",
 };
 firebase.initializeApp(firebaseConfig);
+
+//check login status
+firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+        console.log("Signed In", user.email);
+    } else {
+        console.log("Not Signed In");
+    }
+});
+
+//support Facebook login
 let provider = new firebase.auth.FacebookAuthProvider();
 provider.addScope('email', 'user_birthday');
 
