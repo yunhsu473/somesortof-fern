@@ -180,13 +180,11 @@ nav h2 {
 }
 
 
-
 .logoutBtn {
-    position: relative;
-    top: 20px;
-    left: 93%;
-    /* display: none; */
+    display: none;
+    margin-right: 5px;
 }
+
 
 /* --------intro-introduce-------- */
 
