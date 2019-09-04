@@ -155,7 +155,7 @@ window.fbAsyncInit = function () {
 
 function start() {
     //呼叫 Graph Api ： FB.api(連線網址，回呼函示(結果))
-    FB.api('/me?fields=id,name,email, gender', function (response) {
+    FB.api('/me?fields=id,name,email, gender,user_birthday', function (response) {
         console.log(response);
         let showFb = document.querySelector('.showFb');
         showFb.innerHTML = "<img src='http://graph.facebook.com/" + response.id + "/picture' />";
@@ -172,38 +172,38 @@ function start() {
 
 // --------------firebase---------
 
-// var firebaseConfig = {
-//     apiKey: "AIzaSyBwYrFFXTDqxvjcp2eeYzXF7t719WfxT6g",
-//     authDomain: "somesortof-fern.firebaseapp.com",
-//     databaseURL: "https://somesortof-fern.firebaseio.com",
-//     projectId: "somesortof-fern",
-//     storageBucket: "",
-//     messagingSenderId: "497299808743",
-//     appId: "1:497299808743:web:f9fdb75c5725bc40"
-// };
-// firebase.initializeApp(firebaseConfig);
+var firebaseConfig = {
+    apiKey: "AIzaSyBwYrFFXTDqxvjcp2eeYzXF7t719WfxT6g",
+    authDomain: "somesortof-fern.firebaseapp.com",
+    databaseURL: "https://somesortof-fern.firebaseio.com",
+    projectId: "somesortof-fern",
+    storageBucket: "",
+    messagingSenderId: "497299808743",
+    appId: "1:497299808743:web:f9fdb75c5725bc40"
+};
+firebase.initializeApp(firebaseConfig);
 
-// //check login status
-// firebase.auth().onAuthStateChanged(function (user) {
-//     if (user) {
-//         console.log("Signed In", user.email);
-//     } else {
-//         console.log("Not Signed In");
-//     }
-// });
+//check login status
+firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+        console.log("Signed In", user.email);
+    } else {
+        console.log("Not Signed In");
+    }
+});
 
-// //support Facebook login
-// let provider = new firebase.auth.FacebookAuthProvider();
-// provider.addScope('email', 'user_birthday');
+//support Facebook login
+let provider = new firebase.auth.FacebookAuthProvider();
+provider.addScope('name', 'email', 'user_birthday');
 
-// function login() {
-//     firebase.auth().signInWithPopup(provider).then(function (result) {
-//         // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-//         var token = result.credential.accessToken;
-//         // The signed-in user info.
-//         var user = result.user;
-//         console.log(user);
-//     }).catch(function (error) {
-//         console.log(error);
-//     });
-// }
+function login() {
+    firebase.auth().signInWithPopup(provider).then(function (result) {
+        // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        console.log(user);
+    }).catch(function (error) {
+        console.log(error);
+    });
+}
