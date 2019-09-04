@@ -179,6 +179,9 @@ nav h2 {
     float: right;
 }
 
+.showFb img:hover .logoutBtn {
+    display: block;
+}
 
 .logoutBtn {
     position: relative;

@@ -104,8 +104,8 @@ function login() {
 
 
 function logout() {
-    const logoutBtn = document.querySelector('.logoutBtn');
-    logoutBtn.style.display = 'block';
+    // const logoutBtn = document.querySelector('.logoutBtn');
+    // logoutBtn.style.display = 'block';
     FB.logout(function (response) {
         // user is now logged out
         console.log(response);
