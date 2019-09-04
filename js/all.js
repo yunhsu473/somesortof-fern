@@ -109,7 +109,7 @@ function login() {
 
 function logout() {
     let logoutBtn = document.querySelector('.logoutBtn');
-    let showFb = document.querySelector('.showFb');
+    let showFb = document.querySelector('.showFb img');
     let loginBtn = document.querySelector('.loginBtn');
 
     FB.logout(function (response) {
