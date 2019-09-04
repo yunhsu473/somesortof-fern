@@ -183,7 +183,9 @@ function login() {
         // The signed-in user info.
         var user = result.user;
         console.log(user);
+        loginBtn.style.display = "none";
     }).catch(function (error) {
+        loginBtn.style.display = "block";
         console.log(error);
     });
 }
