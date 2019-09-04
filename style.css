@@ -179,9 +179,7 @@ nav h2 {
     float: right;
 }
 
-.showFb:hover button {
-    display: block;
-}
+
 
 .logoutBtn {
     position: relative;

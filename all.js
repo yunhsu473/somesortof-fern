@@ -85,12 +85,16 @@ function statusChangeCallback(response) { // Called with the results from FB.get
     console.log('statusChangeCallback');
     console.log(response); // The current login status of the person.
     let loginBtn = document.querySelector('.loginBtn');
+    let logoutBtn = document.querySelector('.logoutBtn');
+
     if (response.status === 'connected') { // Logged into your webpage and Facebook.使用者已授權開始應用程式
         // testAPI();
         start();
         loginBtn.style.display = "none";
+        logoutBtn.style.display = 'block';
     } else { // Not logged into your webpage or we are unable to tell.使用者未授權，鼓勵使用者授權
         loginBtn.style.display = "block";
+        logoutBtn.style.display = 'none';
     }
 }
 
@@ -104,8 +108,6 @@ function login() {
 
 
 function logout() {
-    // const logoutBtn = document.querySelector('.logoutBtn');
-    // logoutBtn.style.display = 'block';
     FB.logout(function (response) {
         // user is now logged out
         console.log(response);
