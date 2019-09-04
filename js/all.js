@@ -108,10 +108,17 @@ function login() {
 
 
 function logout() {
+    let logoutBtn = document.querySelector('.logoutBtn');
+    let showFb = document.querySelector('.showFb');
+    let loginBtn = document.querySelector('.loginBtn');
+
     FB.logout(function (response) {
         // user is now logged out
         statusChangeCallback(response);
         console.log(response);
+        logoutBtn.style.display = "none";
+        showFb.style.display = "none";
+        loginBtn.style.display = "block";
     });
 }
 
