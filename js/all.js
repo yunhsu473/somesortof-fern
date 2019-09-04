@@ -85,12 +85,16 @@ function statusChangeCallback(response) { // Called with the results from FB.get
     console.log('statusChangeCallback');
     console.log(response); // The current login status of the person.
     let loginBtn = document.querySelector('.loginBtn');
+    let logoutBtn = document.querySelector('.logoutBtn');
+
     if (response.status === 'connected') { // Logged into your webpage and Facebook.使用者已授權開始應用程式
         // testAPI();
         start();
         loginBtn.style.display = "none";
+        logoutBtn.style.display = "block";
     } else { // Not logged into your webpage or we are unable to tell.使用者未授權，鼓勵使用者授權
         loginBtn.style.display = "block";
+        logoutBtn.style.display = "none";
     }
 }
 
@@ -101,6 +105,15 @@ function login() {
         scope: "email, public_profile, user_gender, user_posts"
     })
 };
+
+
+function logout() {
+    FB.logout(function (response) {
+        // user is now logged out
+        console.log(response);
+        loginBtn.style.display = "block";
+    });
+}
 
 // function checkLoginState() { // Called when a person is finished with the Login Button.
 //     FB.getLoginStatus(function (response) { // See the onlogin handler
