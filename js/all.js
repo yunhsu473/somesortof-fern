@@ -90,6 +90,7 @@ function statusChangeCallback(response) { // Called with the results from FB.get
     if (response.status === 'connected') { // Logged into your webpage and Facebook.使用者已授權開始應用程式
         // testAPI();
         start();
+        fireLogin();
         loginBtn.style.display = "none";
         logoutBtn.style.display = "block";
     } else { // Not logged into your webpage or we are unable to tell.使用者未授權，鼓勵使用者授權
@@ -196,16 +197,12 @@ firebase.auth().onAuthStateChanged(function (user) {
 let provider = new firebase.auth.FacebookAuthProvider();
 provider.addScope('email');
 
-function login() {
+function fireLogin() {
     firebase.auth().signInWithPopup(provider).then(function (result) {
         // This gives you a Facebook Access Token. You can use it to access the Facebook API.
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
-        let showFb = document.querySelector('.showFb');
-        showFb.style.display = "block";
-        let loginBtn = document.querySelector('.loginBtn');
-        loginBtn.style.display = "none";
         console.log(user);
     }).catch(function (error) {
         console.log(error);
