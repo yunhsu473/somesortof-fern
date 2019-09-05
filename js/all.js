@@ -98,7 +98,7 @@ function login() {
     FB.login(function (response) {
         statusChangeCallback(response);
     }, {
-        scope: "id,email, public_profile, user_gender, user_posts"
+        scope: "email, user_gender, user_posts"
     })
 };
 
@@ -154,7 +154,7 @@ function start() {
     let logoutBtn = document.querySelector('.logoutBtn');
 
     //呼叫 Graph Api ： FB.api(連線網址，回呼函示(結果))
-    FB.api('/me?fields=id,name,email, gender,user_birthday', function (response) {
+    FB.api('/me?fields=id,name,email, gender', function (response) {
         console.log(response);
         let showFb = document.querySelector('.showFb');
         showFb.innerHTML = "<img src='http://graph.facebook.com/" + response.id + "/picture' />";
