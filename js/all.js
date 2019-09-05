@@ -84,18 +84,13 @@ window.addEventListener('DOMContentLoaded', initCart);
 function statusChangeCallback(response) { // Called with the results from FB.getLoginStatus().
     console.log('statusChangeCallback');
     console.log(response); // The current login status of the person.
-    let loginBtn = document.querySelector('.loginBtn');
-    let logoutBtn = document.querySelector('.logoutBtn');
 
     if (response.status === 'connected') { // Logged into your webpage and Facebook.使用者已授權開始應用程式
         // testAPI();
         start();
-        loginBtn.style.display = "none";
-        logoutBtn.style.display = "block";
-        loginBtn.style.display = "none";
     } else { // Not logged into your webpage or we are unable to tell.使用者未授權，鼓勵使用者授權
-        loginBtn.style.display = "block";
-        logoutBtn.style.display = "none";
+        // loginBtn.style.display = "block";
+        // logoutBtn.style.display = "none";
     }
 }
 
@@ -103,7 +98,7 @@ function login() {
     FB.login(function (response) {
         statusChangeCallback(response);
     }, {
-        scope: "email, public_profile, user_gender, user_posts"
+        scope: "id,email, public_profile, user_gender, user_posts"
     })
 };
 
@@ -155,12 +150,17 @@ window.fbAsyncInit = function () {
 }(document, 'script', 'facebook-jssdk'));
 
 function start() {
+    let loginBtn = document.querySelector('.loginBtn');
+    let logoutBtn = document.querySelector('.logoutBtn');
+
     //呼叫 Graph Api ： FB.api(連線網址，回呼函示(結果))
     FB.api('/me?fields=id,name,email, gender,user_birthday', function (response) {
         console.log(response);
         let showFb = document.querySelector('.showFb');
         showFb.innerHTML = "<img src='http://graph.facebook.com/" + response.id + "/picture' />";
     });
+    loginBtn.style.display = "none";
+    logoutBtn.style.display = "block";
 }
 // function testAPI() { // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
 //     console.log('Welcome!  Fetching your information.... ');
