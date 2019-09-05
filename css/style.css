@@ -180,7 +180,7 @@ nav h2 {
 }
 
 
-.logoutBtn {
+#logoutBtn {
     display: none;
     margin-right: 30px;
 }
