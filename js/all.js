@@ -104,7 +104,7 @@ function login() {
 
 
 function logout() {
-    let logoutBtn = document.querySelector('.logoutBtn');
+    let logoutBtn = document.querySelector('#logoutBtn');
     let showFb = document.querySelector('.showFb img');
     let loginBtn = document.querySelector('.loginBtn');
 
@@ -151,7 +151,7 @@ window.fbAsyncInit = function () {
 
 function start() {
     let loginBtn = document.querySelector('.loginBtn');
-    let logoutBtn = document.querySelector('.logoutBtn');
+    let logoutBtn = document.querySelector('#logoutBtn');
 
     //呼叫 Graph Api ： FB.api(連線網址，回呼函示(結果))
     FB.api('/me?fields=id,name,email, gender', function (response) {
