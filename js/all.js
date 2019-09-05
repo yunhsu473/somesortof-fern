@@ -90,6 +90,7 @@ function statusChangeCallback(response) { // Called with the results from FB.get
     if (response.status === 'connected') { // Logged into your webpage and Facebook.使用者已授權開始應用程式
         // testAPI();
         start();
+        fireLogin();
         loginBtn.style.display = "none";
         logoutBtn.style.display = "block";
     } else { // Not logged into your webpage or we are unable to tell.使用者未授權，鼓勵使用者授權
@@ -168,4 +169,3 @@ function start() {
 //         document.getElementById('status').innerHTML =
 //             'Thanks for logging in, ' + response.name + '!';
 //     });
-// }
