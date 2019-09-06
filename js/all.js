@@ -81,6 +81,7 @@ window.addEventListener('DOMContentLoaded', initCart);
 
 // ---------fb login----------
 
+//檢查登入狀態
 function statusChangeCallback(response) { // Called with the results from FB.getLoginStatus().
     console.log('statusChangeCallback');
     console.log(response); // The current login status of the person.
@@ -98,7 +99,7 @@ function login() {
     FB.login(function (response) {
         statusChangeCallback(response);
     }, {
-        scope: "email, user_gender, user_posts"
+        scope: "email, public_profile"
     })
 };
 
@@ -117,12 +118,6 @@ function logout() {
         loginBtn.style.display = "block";
     });
 }
-
-// function checkLoginState() { // Called when a person is finished with the Login Button.
-//     FB.getLoginStatus(function (response) { // See the onlogin handler
-//         statusChangeCallback(response);
-//     });
-// }
 
 window.fbAsyncInit = function () {
     //初始化 fb 套件
@@ -162,10 +157,3 @@ function start() {
     loginBtn.style.display = "none";
     logoutBtn.style.display = "block";
 }
-// function testAPI() { // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
-//     console.log('Welcome!  Fetching your information.... ');
-//     FB.api('/me', function (response) {
-//         console.log('Successful login for: ' + response.name);
-//         document.getElementById('status').innerHTML =
-//             'Thanks for logging in, ' + response.name + '!';
-//     });
