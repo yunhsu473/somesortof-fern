@@ -272,10 +272,6 @@ nav h2 {
 }
 
 
-.card-img-top:hover {
-    transform: scale(1.1, 1.1);
-}
-
 .card-text {
     height: 160px;
     font-size: 0.9em;
