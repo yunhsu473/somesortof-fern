@@ -11,6 +11,7 @@ body .wrap {
     background-repeat: no-repeat;
     /* background-color: rgba(221, 219, 219, 0.558); */
     /* opacity: 0.5; */
+    background: linear-gradient(#fdfbfb, #ebedee)
 }
 
 /*----------------- index --------------------*/
@@ -160,6 +161,7 @@ body .wrap {
 header nav {
     font-family: Microsoft Jhenghei;
     opacity: 0.9;
+    background: linear-gradient(#96e6a1, #d4fc79);
 }
 
 nav h2 {
@@ -238,10 +240,11 @@ nav h2 {
     width: 500px;
     height: 700px;
     margin: 50px 30%;
-    /* transition: all 2s ease 2s; */
+    /* transition: all 2s ease 2s;
     transition: transform 2s ease,
-        opacity .5s ease-out
+        opacity .5s ease-out */
 }
+
 
 /* -------product--------- */
 
