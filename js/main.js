@@ -157,6 +157,7 @@ function start() {
     logoutBtn.style.display = "block";
 }
 
+
 // -----newsData-----
 let newsData = [{
     theme: `2020 市集活動予告 `,
