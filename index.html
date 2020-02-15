@@ -16,22 +16,74 @@
 <body>
     <div class="wrap">
         <header>
-            <div class="jumbotron jumbotron-fluid" style="display: none;">
-                <div class="img1">
-                    <a href="#">Welcome to <br> somesortof. fern <br> 羊君 </a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <h2 class="navbar-brand">羊君</h2>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="../index.html">首頁 <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="intro.html">設計師介紹</a>
+                        <a class="nav-item nav-link active" href="product.html">商品</a>
+                        <a class="nav-item nav-link" href="news.html">最新消息</a>
+                        <a class="nav-item nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
                 </div>
-                <div class="img2">
-                    <a href="pages/product.html" target="_blank">Product</a>
+                <button type="button" id="logoutBtn" class=" btn  btn-outline-success" onclick="logout();">Log
+                    out</button>
+                <div class="showFb"></div>
+                <button type="button" class=" btn btn-success loginBtn" onclick="login();">Log in</button>
+            </nav>
+        </header>
+    <content>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777" /></svg>
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>Example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="img3">
-                    <a href="pages/intro.html" target="_blank">Intro</a>
-                </div>
-                <div class="img4">
-                    <a href="pages/news.html" target="_blank">News</a>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777" /></svg>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
-    </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+    </content>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

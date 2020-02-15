@@ -11,150 +11,15 @@ body .wrap {
     background-repeat: no-repeat;
     /* background-color: rgba(221, 219, 219, 0.558); */
     /* opacity: 0.5; */
-    background: linear-gradient(#fdfbfb, #ebedee)
+    background: linear-gradient(#fdfbfb, #ebedee);
 }
+
 
 /*----------------- index --------------------*/
-
-
-.jumbotron {
-    height: 650px;
-    background-image: url(../images/brand.png);
-    background-color: rgb(76, 67, 67);
-    background-size: cover;
-    position: relative;
+#myCarouse {
+    height: 1000px;
 }
 
-.container {
-    position: absolute;
-    top: 15%;
-    left: 15%;
-    height: 200px;
-    background-color: rgba(68, 64, 64, 0.918);
-    text-align: center;
-    padding-top: 60px;
-    color: rgb(241, 224, 202);
-    font-size: 1.5em;
-}
-
-.list-group {
-    margin-left: 60%;
-    margin-top: 30%;
-}
-
-.list-group li {
-    background-color: rgba(115, 109, 109, 0.918);
-    font-size: 1.3em;
-}
-
-.list-group li:hover {
-    border: 1px solid rgb(241, 224, 202);
-    background-color: rgba(47, 43, 43, 0.918);
-
-}
-
-.list-group li a {
-    text-decoration: none;
-    color: rgb(241, 224, 202);
-    padding: 10px;
-
-}
-
-/* ---------images-------- */
-.jumbotron div {
-    border-radius: 50%;
-    box-shadow: 3px 3px 15px 5px rgba(51, 51, 51, 0.5) inset;
-    background-size: cover;
-    transform: scale(1, 1);
-    transition: all 0.5s ease-out;
-}
-
-.jumbotron a {
-    font-size: 2.5em;
-    color: rgb(65, 155, 9);
-    text-decoration: none;
-    /* ---- */
-    display: none;
-    text-align: center;
-    overflow: hidden;
-    transform: scale(1, 1);
-    transition: all 0.5s ease-out;
-    z-index: 99;
-}
-
-.jumbotron div:hover {
-    transform: scale(1.2, 1.2);
-    background: rgba(255, 255, 255, 0.823);
-}
-
-.jumbotron div:hover a {
-    display: block;
-}
-
-.jumbotron a:hover {
-    color: rgb(65, 155, 9);
-    text-decoration: none;
-
-}
-
-.img1 {
-    background-image: url(../images/brand1.png);
-    width: 260px;
-    height: 260px;
-    position: absolute;
-    bottom: 48px;
-    left: 182px;
-}
-
-.img1 a {
-    padding-top: 70px;
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-.img2 {
-    background-image: url(../images/brand2.png);
-    width: 210px;
-    height: 210px;
-    position: absolute;
-    top: 135px;
-    left: 545px;
-}
-
-.img2 a {
-    padding-top: 80px;
-}
-
-.img3 {
-    background-image: url(../images/brand3.png);
-    width: 170px;
-    height: 170px;
-    position: absolute;
-    top: 105px;
-    left: 155px;
-}
-
-.img3 a {
-    padding-top: 50px;
-}
-
-.img3:hover a {
-    display: block;
-}
-
-
-.img4 {
-    background-image: url(../images/brand4.png);
-    width: 260px;
-    height: 260px;
-    position: absolute;
-    top: 170px;
-    right: 320px;
-}
-
-.img4 a {
-    padding-top: 100px;
-}
 
 /* --------nav------- */
 
