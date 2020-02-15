@@ -27,12 +27,21 @@ header nav {
     background: linear-gradient(#96e6a1, #d4fc79);
 }
 
+
 nav h2 {
     font-size: 1.2em;
     font-weight: bolder;
     margin-top: 8px;
+    color: #6610f2;
 }
 
+.navbar-nav a {
+    color: #fd7e14;
+}
+
+.navbar-nav a:hover {
+    color: #6610f2;
+}
 .loginBtn {
     float: right;
 }
@@ -74,11 +83,12 @@ nav h2 {
 
 .designImg2 {
     background-image: url(../images/intro2.jpg);
-    height: 1000px;
+    height: 950px;
     width: 600px;
     float: right;
     margin-right: 50px;
     background-repeat: no-repeat;
+    box-shadow:0 0 10px 10px #fdfbfb;
 }
 
 .designer h4 {
@@ -243,11 +253,12 @@ nav h2 {
 /* --------footer------- */
 footer {
     height: 50px;
-    background-color: rgba(64, 60, 60, 0.918);
+    background: linear-gradient(#96e6a1, #d4fc79);
+    /* background-color: rgba(64, 60, 60, 0.918); */
 }
 
 footer p {
-    color: antiquewhite;
+    color: #50bda1;
     text-align: center;
     padding-top: 10px;
 }
