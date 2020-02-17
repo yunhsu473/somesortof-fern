@@ -16,19 +16,46 @@ body .wrap {
 
 
 /*----------------- index --------------------*/
-#myCarouse {
-    height: 1000px;
+.carousel-item img{
+    height: 500px;
 }
 
+#carouselCaptions{
+    width: 80%;
+    margin: 5px  auto;
+}
 
+content>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrpa;
+    justify-content: center;
+}
+
+.recommend>div {
+    height: 400px;
+}
+
+.paperTape>div{
+    height: 400px;
+}
 /* --------nav------- */
 
+.nav{
+    width: 80%;
+    margin: 10px auto;
+}
 header nav {
     font-family: Microsoft Jhenghei;
-    opacity: 0.9;
-    background: linear-gradient(#96e6a1, #d4fc79);
+    opacity: 0.8;
+    background: linear-gradient(#0ba360, #3cba92);
+    height: 50px;
 }
 
+.navbar-nav {
+    width: 80%;
+    margin: 5px auto;
+}
 
 nav h2 {
     font-size: 1.2em;
@@ -39,6 +66,8 @@ nav h2 {
 
 .navbar-nav a {
     color: #fd7e14;
+    /* font-weight: 600; */
+    font-size: 1.2em;
 }
 
 .navbar-nav a:hover {
@@ -61,6 +90,10 @@ nav h2 {
     margin-right: 30px;
 }
 
+.indexLogo>img{
+    width: 150px;
+    height: 44px;
+}
 
 /* --------intro-introduce-------- */
 
@@ -136,7 +169,7 @@ nav h2 {
     margin: 10px auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 20px;
 }
 
