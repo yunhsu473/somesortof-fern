@@ -6,50 +6,36 @@ body {
 
 body .wrap {
     font-family: Microsoft Jhenghei;
-    /* background-image: url(../images/nav.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-color: rgba(221, 219, 219, 0.558); */
-    /* opacity: 0.5; */
     background: linear-gradient(#fdfbfb, #ebedee);
 }
 
 
-/*----------------- index --------------------*/
-.carousel-item img{
-    height: 500px;
-}
-
-#carouselCaptions{
-    width: 80%;
-    margin: 5px  auto;
-}
-
-content>div{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrpa;
-    justify-content: center;
-}
-
-.recommend>div {
-    height: 400px;
-}
-
-.paperTape>div{
-    height: 400px;
-}
 /* --------nav------- */
 
 .nav{
     width: 80%;
     margin: 10px auto;
 }
+
 header nav {
     font-family: Microsoft Jhenghei;
     opacity: 0.8;
     background: linear-gradient(#0ba360, #3cba92);
     height: 50px;
+    /* z-index: 1; */
+}
+.nav-wrap.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.menuFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .navbar-nav {
@@ -57,12 +43,6 @@ header nav {
     margin: 5px auto;
 }
 
-nav h2 {
-    font-size: 1.2em;
-    font-weight: bolder;
-    margin-top: 8px;
-    color: #6610f2;
-}
 
 .navbar-nav a {
     color: #fd7e14;

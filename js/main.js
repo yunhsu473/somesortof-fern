@@ -6,6 +6,17 @@ $('document').ready(function () {
     $('.list').fadeIn(2500);
 });
 
+// --------nav-------
+$(window).scroll(function () {
+    let menu_top = $('.nav').offset().top;
+    if ($(window).scrollTop() >= menu_top) {
+        $('.navbar').addClass('fixed-top')
+    }
+    else {
+        $('.navbar').removeClass('fixed-top')
+    }
+});  
+
 
 // --------news-------
 $('.accordion').on('click', '.accordion-control', function (e) {
