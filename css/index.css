@@ -1,0 +1,24 @@
+/*----------------- index --------------------*/
+.carousel-item img{
+    height: 500px;
+}
+
+#carouselCaptions{
+    width: 80%;
+    margin: 5px  auto;
+}
+
+content>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrpa;
+    justify-content: center;
+}
+
+.recommend>div {
+    height: 400px;
+}
+
+.paperTape>div{
+    height: 400px;
+}
