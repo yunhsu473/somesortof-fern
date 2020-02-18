@@ -1,3 +1,6 @@
+/* --------import------- */
+@import "index.css";
+
 /*-----------------body & wrap --------------------*/
 html,
 body {
@@ -6,39 +9,47 @@ body {
 
 body .wrap {
     font-family: Microsoft Jhenghei;
-    /* background-image: url(../images/nav.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-color: rgba(221, 219, 219, 0.558); */
-    /* opacity: 0.5; */
     background: linear-gradient(#fdfbfb, #ebedee);
-}
-
-
-/*----------------- index --------------------*/
-#myCarouse {
-    height: 1000px;
 }
 
 
 /* --------nav------- */
 
+.nav{
+    width: 80%;
+    margin: 10px auto;
+}
+
 header nav {
     font-family: Microsoft Jhenghei;
-    opacity: 0.9;
-    background: linear-gradient(#96e6a1, #d4fc79);
+    opacity: 0.8;
+    background: linear-gradient(#0ba360, #3cba92);
+    height: 50px;
+}
+.nav-wrap.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.menuFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-
-nav h2 {
-    font-size: 1.2em;
-    font-weight: bolder;
-    margin-top: 8px;
-    color: #6610f2;
+.navbar-nav {
+    width: 80%;
+    margin: 5px auto;
 }
+
 
 .navbar-nav a {
     color: #fd7e14;
+    /* font-weight: 600; */
+    font-size: 1.2em;
 }
 
 .navbar-nav a:hover {
@@ -61,6 +72,10 @@ nav h2 {
     margin-right: 30px;
 }
 
+.indexLogo>img{
+    width: 150px;
+    height: 44px;
+}
 
 /* --------intro-introduce-------- */
 
@@ -136,7 +151,7 @@ nav h2 {
     margin: 10px auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 20px;
 }
 
