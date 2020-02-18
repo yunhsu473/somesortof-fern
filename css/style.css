@@ -1,3 +1,6 @@
+/* --------import------- */
+@import "index.css";
+
 /*-----------------body & wrap --------------------*/
 html,
 body {
@@ -24,7 +27,6 @@ header nav {
     opacity: 0.8;
     background: linear-gradient(#0ba360, #3cba92);
     height: 50px;
-    /* z-index: 1; */
 }
 .nav-wrap.affix {
     position: fixed;
