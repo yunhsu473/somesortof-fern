@@ -1,4 +1,4 @@
-/*----------------- index --------------------*/
+/*----------------- carousel --------------------*/
 .carousel-item img{
     height: 500px;
 }
@@ -6,19 +6,47 @@
 #carouselCaptions{
     width: 80%;
     margin: 5px  auto;
+    margin-bottom: 10px;
 }
 
-content>div{
+
+.carousel-caption{
+    background-color: #3cba92;
+    opacity: 0.9;
+}
+
+/*----------------- product --------------------*/
+content h3{
+    margin: 15px 0;
+    margin-left: 15%;
+    color: #0ba360;
+}
+
+.contentFlex {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrpa;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.recommend>div {
+.contentFlex>div {
     height: 400px;
 }
 
-.paperTape>div{
-    height: 400px;
+.contentFlex>h3{
+    padding: 5px;
+}
+
+
+.paperTape{
+    margin: 100px 0;
+}
+
+.portrait>div{
+    width: 30%;
+    margin: 10px auto;
+}
+
+.portrait img{
+    height: 600px;
 }

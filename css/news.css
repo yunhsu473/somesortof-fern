@@ -1,0 +1,37 @@
+/* -----------news-------- */
+.newsBar {
+    background-image: url(../images/newsBar.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    margin: 20px 30%;
+}
+
+#news h2 {
+    margin: 10px 180px;
+
+}
+
+#news .accordion {
+    list-style-type: none;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#news .accordion li {
+    margin: 10px auto;
+}
+
+#news .accordion-panel {
+    display: none;
+}
+
+.accordion-panel img {
+    height: 400px;
+}
+
+#news button {
+    width: 1200px;
+    text-align: left;
+}
