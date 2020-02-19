@@ -1,0 +1,37 @@
+/* -------product--------- */
+
+.logo {
+    height: 200px;
+    /* width: 70%; */
+    background-image: url(../images/logo.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 20%;
+}
+
+.row {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    margin: 25px;
+}
+
+.card-img-top {
+    height: 400px;
+    transition: all 0.5s ease-out;
+}
+
+
+.card-text {
+    height: 160px;
+    font-size: 0.9em;
+}
+
+.card-text span {
+    font-size: 1.1em;
+}

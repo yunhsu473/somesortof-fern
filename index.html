@@ -21,8 +21,7 @@
                     <a class="nav-link active indexLogo" href="#"><img src="images/index/logo2.jpg" alt=""></a>
                 </li>
                 <li class="nav-item">
-                <button type="button" id="logoutBtn" class=" btn  btn-outline-success mt-2" onclick="logout();">Log
-                    out</button>
+                <button type="button" id="logoutBtn" class=" btn  btn-outline-success mt-2" onclick="logout();">Logout</button>
                 <div class="showFb"></div>
                 <button type="button" class=" btn btn-success loginBtn mt-2" onclick="login();">Log in</button>
                 </li>
@@ -31,6 +30,7 @@
                 <nav class="navbar navbar-expand-lg">
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="index.html">首頁</a>
                             <a class="nav-item nav-link" href="pages/intro.html">設計師介紹</a>
                             <a class="nav-item nav-link active" href="pages/product.html">商品</a>
                             <a class="nav-item nav-link" href="pages/news.html">最新消息</a>
@@ -49,25 +49,37 @@
                     <li data-target="#carouselCaptions" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item  active">
                         <img src="images/index/carousel1.jpg" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block ">
-                            <h5>新品報到 - 忒緹絲</h5>
-                            <p>以海洋女神為創作靈感，創作了8位各不同樣態的人魚，用水彩慢慢渲染出魚尾與鱗片的質感，珍珠貝殼的素材也很適合拼貼使用。</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>***市集活動***</h5>
+                            <p>
+                                日期：1/29 & 1/31 - 2/2
+                                <br>
+                                地點：好好手感微笑市集:::新北投車站
+                            </p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="images/index/carousel2.jpg" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5>新品報到 - 忒緹絲</h5>
+                            <p>
+                                以海洋女神為創作靈感，創作了8位各不同樣態的人魚。
+                                <br>
+                                用水彩慢慢渲染出魚尾與鱗片的質感，珍珠貝殼的素材也很適合拼貼使用。
+                            </p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/index/carousel3.png" class="d-block w-100">
+                        <img src="images/index/carousel3.jpg" class="d-block w-100">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h5>***市集活動***</h5>
+                            <p>
+                                日期：2/4 - 2/9  
+                                <br>
+                                地點：台北國際書展:::世貿一館
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -83,53 +95,31 @@
 
             <div class="recommend">
                 <h3>近期主打商品</h3>
-                <br>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 插畫明信片 |<br> Human diagram人類圖鑑</h5>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 插畫明信片 |<br> Human diagram人類圖鑑</h5>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 插畫明信片 |<br> Human diagram人類圖鑑</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="adBanner">
-
+                <div class="contentFlex"></div>
             </div>
 
             <div class="paperTape">
                 <h3>來點紙膠帶</h3>
-                <br>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 插畫明信片 |<br> Human diagram人類圖鑑</h5>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 插畫明信片 |<br> Human diagram人類圖鑑</h5>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 插畫明信片 |<br> Human diagram人類圖鑑</h5>
+                <div class="contentFlex"></div>
+            </div>
+
+            <div class="portrait">
+                <h3>客製化似顏繪</h3>
+                <div id="carouselSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/index/portrait1.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/index/portrait2.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/index/portrait3.jpg" class="d-block w-100">
+                        </div>
                     </div>
                 </div>
             </div>
+
         </content>
         <footer>
             <p>聯絡信箱：<a href="#" onclick="event.preventDefault();">somesortof.fern@gmail.com</a></p>
