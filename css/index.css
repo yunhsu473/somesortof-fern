@@ -18,15 +18,17 @@
 /*----------------- product --------------------*/
 content h3{
     margin: 15px 0;
-    margin-left: 15%;
+    margin-left: 10%;
     color: #0ba360;
 }
 
 .contentFlex {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: nowrap; */
+    justify-content: space-around;
 }
 
 .contentFlex>div {
@@ -43,7 +45,7 @@ content h3{
 }
 
 .portrait>div{
-    width: 30%;
+    width: 400px;
     margin: 10px auto;
 }
 
