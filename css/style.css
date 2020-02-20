@@ -61,7 +61,7 @@ header nav {
 
 #logoutBtn {
     display: none;
-    margin-right: 20px;
+    margin: 0 30px;
 }
 
 .indexLogo>img{
