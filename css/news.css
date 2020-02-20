@@ -1,15 +1,16 @@
 /* -----------news-------- */
 .newsBar {
-    background-image: url(../images/newsBar.jpg);
+    background-image: url('../images/news/newsBar.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 400px;
-    margin: 20px 30%;
+    height: 450px;
+    width: 100%;
+    margin: 20px 0;
+    margin-left: 30%;
 }
 
 #news h2 {
-    margin: 10px 180px;
-
+    margin: 10px 15%;
 }
 
 #news .accordion {
@@ -32,6 +33,6 @@
 }
 
 #news button {
-    width: 1200px;
+    width: 1100px;
     text-align: left;
 }

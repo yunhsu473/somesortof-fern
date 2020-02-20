@@ -14,24 +14,25 @@
     flex: 1;
 }
 
-#cart .mb-3 {
+#cart .card {
     margin: 5px 10%;
 }
 
-#cart .mb-3 ul {
+#cart .card ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
+    width: 95%;
 }
 
-#cart .mb-3 li {
-    margin: 5px 10px;
+#cart .card li {
+    margin: 20px 10px;
     flex: 1;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
-#cart .mb-3 img {
+#cart .card img {
     width: 100px;
     height: 100px;
     float: left;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>somesortof.fern 羊君</title>
-    <link rel="icon" href="images/designer.png" type="image/x-icon">
+    <link rel="icon" href="images/intro/designer.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,9 +21,11 @@
                     <a class="nav-link active indexLogo" href="#"><img src="images/index/logo2.jpg" alt=""></a>
                 </li>
                 <li class="nav-item">
-                <button type="button" id="logoutBtn" class=" btn  btn-outline-success mt-2" onclick="logout();">Logout</button>
-                <div class="showFb"></div>
-                <button type="button" class=" btn btn-success loginBtn mt-2" onclick="login();">Log in</button>
+                    <button type="button" id="logoutBtn" class=" btn  btn-outline-success mt-2 mb-2" onclick="logout();">Logout</button>
+                    <div class="showFb"></div>
+                </li>
+                <li class="nav-item"></li>
+                    <button type="button" class=" btn btn-success loginBtn mt-2 mb-2" onclick="login();">Log in</button>
                 </li>
             </ul>
             <div class="nav-wrap">
@@ -93,18 +95,18 @@
                 </a>
             </div>
 
-            <div class="recommend">
+            <div class="recommend indexPro">
                 <h3>近期主打商品</h3>
                 <div class="contentFlex"></div>
             </div>
 
-            <div class="paperTape">
-                <h3>來點紙膠帶</h3>
+            <div class="paperTape indexPro">
+                <h3 style="margin-top: 10%;">來點紙膠帶</h3>
                 <div class="contentFlex"></div>
             </div>
 
-            <div class="portrait">
-                <h3>客製化似顏繪</h3>
+            <div class="portrait indexPro">
+                <h3 style="margin-top: 13%;">客製化似顏繪</h3>
                 <div id="carouselSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -136,6 +138,7 @@
     </script>
     <script src="jquery/dist/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/indexData.js"></script>
 </body>
 
 </html>
