@@ -1,0 +1,49 @@
+/*----------------- carousel --------------------*/
+.carousel-item img{
+    height: 500px;
+}
+
+#carouselCaptions{
+    width: 80%;
+    margin: 5px  auto;
+    margin-bottom: 10px;
+}
+
+
+.carousel-caption{
+    background-color: #3cba92;
+    opacity: 0.9;
+}
+
+/*----------------- product --------------------*/
+.indexPro h3 {
+    margin: 20px 0;
+    margin-left: 10%;
+    color: #0ba360;
+}
+
+.contentFlex {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    justify-content: space-around;
+}
+
+.contentFlex>div {
+    height: 300px;
+}
+
+.paperTape{
+    margin: 100px 0;
+}
+
+.portrait>div{
+    width: 400px;
+    margin: 10px auto;
+}
+
+.portrait img{
+    height: 600px;
+}

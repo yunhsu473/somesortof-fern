@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>羊君</title>
+    <title>somesortof.fern 羊君</title>
+    <link rel="icon" href="../images/intro/designer.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,33 +16,41 @@
 <body>
     <div class="wrap">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <h2 class="navbar-brand">羊君</h2>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="../index.html">首頁 <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="intro.html">設計師介紹</a>
-                        <a class="nav-item nav-link" href="product.html">商品</a>
-                        <a class="nav-item nav-link" href="news.html">最新消息</a>
-                        <a class="nav-item nav-link active" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <ul class="nav" style="justify-content: space-between;">
+                <li class="nav-item">
+                    <a class="nav-link active indexLogo" href="#"><img src="../images/index/logo2.jpg" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" id="logoutBtn" class=" btn  btn-outline-success mt-2 mb-2" onclick="logout();">Logout</button>
+                    <div class="showFb"></div>
+                    <button type="button" class=" btn btn-success loginBtn mt-2 mb-2" onclick="login();">Log in</button>
+                </li>
+            </ul>
+            <div class="nav-wrap">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="../index.html">首頁</a>
+                            <a class="nav-item nav-link" href="intro.html">設計師介紹</a>
+                            <a class="nav-item nav-link active" href="product.html">商品</a>
+                            <a class="nav-item nav-link" href="news.html">最新消息</a>
+                            <a class="nav-item nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </header>
+
         <content>
             <div id="cart">
                 <div class="logo"></div>
                 <h5 class="card-header" style="max-width: 80%;">
                     <ul>
                         <li>商品圖片</li>
-                        <li>商品名稱</li>
+                        <li style="flex: 1.5;">商品名稱</li>
                         <li>價格</li>
                         <li>數量</li>
-                        <li style="padding-left: 10px;">小計</li>
+                        <li>小計</li>
                         <li>刪除</li>
                     </ul>
                 </h5>
@@ -74,7 +83,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="../jquery/dist/jquery.min.js"></script>
-    <script src="../js/all.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
