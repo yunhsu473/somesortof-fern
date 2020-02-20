@@ -157,5 +157,5 @@ function start() {
         showFb.innerHTML = "<img src='http://graph.facebook.com/" + response.id + "/picture' />";
     });
     loginBtn.style.display = "none";
-    logoutBtn.style.display = "block";
+    logoutBtn.style.display = "inline-block";
 }
