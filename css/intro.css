@@ -1,12 +1,12 @@
 /* --------intro-introduce-------- */
 .designer {
     width: 90%;
-    /* margin: 10px; */
-    /* margin-left: 5%; */
+    margin: 10px;
+    margin-left: 150px;
 }
 
 .designImg {
-    background-image: url(../images/designer.png);
+    background-image: url(../images/intro/designer.png);
     height: 200px;
     width: 200px;
     float: left;
@@ -19,7 +19,7 @@
 }
 
 .designImg2 {
-    background-image: url(../images/intro2.jpg);
+    background-image: url(../images/intro/intro2.jpg);
     height: 950px;
     width: 550px;
     float: right;

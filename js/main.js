@@ -60,12 +60,12 @@ function render() {
         product = cart[i];
         buylist.innerHTML +=
             `<ul>
-                <li style="margin-top: 20px;"><img src="../images/product${product.id}.jpg" alt=""></li>
-                <li>${product.title}</li>
+                <li style="margin-top: 20px;"><img src="../images/product/product${product.id}.jpg" alt=""></li>
+                <li style="flex: 1.5;">${product.title}</li>
                 <li>NT$ ${product.price}</li>
-                <li>${product.qty}</li>
-                <li>NT$ ${product.price * product.qty}</li>
-                <li> <button type="button" class="btn btn-outline-secondary" onclick=\"removeCart(${i})\">刪除</button></li>
+                <li style="flex: 0.8;">${product.qty}</li>
+                <li style="flex: 0.8;">NT$ ${product.price * product.qty}</li>
+                <li style="flex: 0.8;"> <button type="button" class="btn btn-outline-secondary" onclick=\"removeCart(${i})\">刪除</button></li>
             </ul>`
         total += product.price * product.qty;
     }
@@ -157,43 +157,5 @@ function start() {
         showFb.innerHTML = "<img src='http://graph.facebook.com/" + response.id + "/picture' />";
     });
     loginBtn.style.display = "none";
-    logoutBtn.style.display = "block";
-}
-
-// -----indexData-----
-let recommand = [{
-    image: `images/index/product1.jpg`,
-    content: `| 2020 小鼠紅包袋 |`
-},{
-    image: `images/index/product2.jpg`,
-    content: `| 內封插畫筆記本 | plan/e/t`
-},{
-    image: `images/index/product3.jpg`,
-    content: `| 胸章套組 | 群 messes`
-},{
-    image: `images/index/product4.jpg`,
-    content: `| 婚禮插畫 | 含框手繪原稿 :: 全彩雙人半身`
-}]
-
-for (let i = 0; i < recommand.length; i++){
-    $('.recommend>div').append(`<div class="card" style="width: 20rem;"><img src="${recommand[i].image}" class="card-img-top"><div class="card-body"><h5 class= "card-title">${recommand[i].content}</h5></div></div>`)
-}
-
-
-let paperTape = [{
-    image: `images/index/paperTape1.jpg`,
-    content: `肉球 / 5.0cm貓咪紙膠帶`
-}, {
-    image: `images/index/paperTape2.jpg`,
-    content: `忒緹絲 / 7.1cm紙膠帶`
-}, {
-    image: `images/index/paperTape3.png`,
-    content: `Tetris 俄羅斯方塊 / 2.0cm紙膠帶`
-},{
-    image: `images/index/paperTape4.jpg`,
-    content: `龍子 / 5.0cm紙膠帶`
-}]
-
-for (let i = 0; i < recommand.length; i++) {
-    $('.paperTape>div').append(`<div class="card" style="width: 20rem;"><img src="${paperTape[i].image}" class="card-img-top"><div class="card-body"><h5 class="card-title">${paperTape[i].content}</h5></div></div>`)
+    logoutBtn.style.display = "inline-block";
 }

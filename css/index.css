@@ -16,8 +16,8 @@
 }
 
 /*----------------- product --------------------*/
-content h3{
-    margin: 15px 0;
+.indexPro h3 {
+    margin: 20px 0;
     margin-left: 10%;
     color: #0ba360;
 }
@@ -32,13 +32,8 @@ content h3{
 }
 
 .contentFlex>div {
-    height: 400px;
+    height: 300px;
 }
-
-.contentFlex>h3{
-    padding: 5px;
-}
-
 
 .paperTape{
     margin: 100px 0;

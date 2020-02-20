@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>somesortof.fern 羊君</title>
-    <link rel="icon" href="../images/designer.png" type="image/x-icon">
+    <link rel="icon" href="../images/intro/designer.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,9 +21,9 @@
                     <a class="nav-link active indexLogo" href="#"><img src="../images/index/logo2.jpg" alt=""></a>
                 </li>
                 <li class="nav-item">
-                    <button type="button" id="logoutBtn" class=" btn  btn-outline-success mt-2" onclick="logout();">Logout</button>
                     <div class="showFb"></div>
-                    <button type="button" class=" btn btn-success loginBtn mt-2" onclick="login();">Log in</button>
+                    <button type="button" id="logoutBtn" class=" btn  btn-outline-success mt-2 mb-2" onclick="logout();">Logout</button>
+                    <button type="button" class=" btn btn-success loginBtn mt-2 mb-2" onclick="login();">Log in</button>
                 </li>
             </ul>
             <div class="nav-wrap">
@@ -40,173 +40,12 @@
                 </nav>
             </div>
         </header>
-        
+
+        <div class="logo"></div>
+
         <content>
-            <div class="logo"></div>
-            <div class="row">
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product1.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 2019 雙面掛曆::海報 | ms.Orchid</h5>
-                        <p class="card-text">
-                            <span>NT$ 650</span>
-                            <br>
-                            ｜約38*59.4 cm<br>
-                            ｜飄銀紙 250gsm，雙面印刷<br>
-                            ｜黑緞帶+小吊牌，透明圓筒包裝<br>
-                            ｜拍照效果和螢幕影響可能造成色差，商品皆以實體為主。
-                        </p>
-                        <!-- <a href="#" class="btn btn-primary">加入購物車</a> -->
-                        <button type="button" class="btn btn-success"
-                            onclick="addToCart(1, '| 2019 雙面掛曆::海報 | ms.Orchid', 650)">加入購物車</button>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product2.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 胸章套組 | <br>群 messes</h5>
-                        <p class="card-text">
-                            <span>NT$ 250</span>
-                            <br>
-                            ｜胸章直徑約3.2 cm<br>
-                            ｜背紙尺寸約19.5*10.5 cm <br>
-                            ｜霧面質感+背面金屬別針<br>
-                            ｜拍照效果和螢幕影響可能造成色差，商品皆以實體為主。
-                        </p>
-                        <button type="button" class="btn btn-success"
-                            onclick="addToCart(2, '| 胸章套組 | 群 messes', 250)">加入購物車</button>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 插畫明信片 |<br> Human diagram人類圖鑑</h5>
-                        <p class="card-text">
-                            <span>NT$ 250</span>
-                            <br>
-                            ｜14.8 *10.5 cm<br>
-                            ｜半黑紙，單面riso印刷，黑金雙色油墨<br>
-                            ｜真空袋包裝 (無信封)<br>
-                            ｜拍照效果和螢幕影響可能造成色差，商品皆以實體為主。</p>
-                        <button type="button" class="btn btn-success"
-                            onclick="addToCart(3, '| 插畫明信片 | Human diagram人類圖鑑', 250)">加入購物車</button>
-                    </div>
-                </div>
-                <div class=" card" style="width: 20rem;">
-                    <img src="../images/product4.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title"> | 人像插畫 | <br>A5手繪原稿 :: 全彩全身</h5>
-                        <p class="card-text">
-                            <span>NT$ 1200 </span>
-                            <br>
-                            ｜尺寸為A5大小，約為14.8*21 cm<br>
-                            ｜創意插畫紙180gsm<br>
-                            ｜6B鉛筆+水彩+色鉛筆<br>
-                            ｜皮殼棉紙包裝，縫線封口<br>
-                            ｜拍照效果和螢幕影響可能造成色差，商品皆以實體為主。</p>
-                        <button type="button" class="btn btn-success"
-                            onclick="addToCart(4, '| 人像插畫 | A5手繪原稿 :: 全彩全身', 1200)">加入購物車</button>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product5.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 人像插畫 | <br>A5手繪原稿 :: 全彩多人半身</h5>
-                        <p class="card-text">
-                            <span>NT$ 1200 </span>
-                            <br>
-                            ｜尺寸略小於A5，約18*13~15 cm<br>
-                            ｜創意插畫紙180gsm<br>
-                            ｜6B鉛筆+水彩+色鉛筆<br>
-                            ｜真空袋+緞帶包裝<br>
-                            ｜拍照效果和螢幕影響可能造成色差，商品皆以實體為主。
-                        </p>
-                        <button type="button" class="btn btn-success"
-                            onclick="addToCart(5, '| 人像插畫 | A5手繪原稿 :: 全彩多人半身', 1200)">加入購物車</button>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product6.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 人像插畫 | <br>A6手繪原稿 :: 全彩單人半身</h5>
-                        <p class="card-text">
-                            <span>NT$ 650</span>
-                            <br>
-                            ｜尺寸略小於A6，約10*13~15 cm<br>
-                            ｜創意插畫紙180gsm<br>
-                            ｜6B鉛筆+水彩+色鉛筆<br>
-                            ｜真空袋+緞帶包裝<br>
-                            ｜拍照效果和螢幕影響可能造成色差，商品皆以實體為主。
-                        </p>
-                        <button type="button" class="btn btn-success"
-                            onclick="addToCart(6, '| 人像插畫 | A6手繪原稿 :: 全彩單人半身', 650)">加入購物車</button>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product7.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 內封插畫筆記本 |<br> plan/e/t</h5>
-                        <p class="card-text">
-                            <span>NT$ 175</span>
-                            <br>
-                            ｜約11*15 cm<br>
-                            ｜封面:霜白紙180gsm+內頁包含:稻和紙、黑黑紙、砂糖紙、傳統和色紙-墨 、傳統和色紙-青磁<br>
-                            ｜皮殼棉紙包裝，縫線封口<br>
-                            ｜拍照效果和螢幕影響可能造成色差，商品皆以實體為主。
-                        </p>
-                        <button type="button" class="btn btn-success"
-                            onclick="addToCart(7, '| 內封插畫筆記本 | plan/e/t', 175)">加入購物車</button>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product8.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 插畫明信片 | <br>meow #暹羅-001</h5>
-                        <p class="card-text">
-                            <span>NT$ 45</span>
-                            <br>
-                            ｜14.8 *10.5 cm
-                            ｜水彩紙220gsm，雙面印刷<br>
-                            ｜OPP袋包裝 (無信封)<br>
-                            ｜拍照效果和螢幕影響可能造成色差，商品皆以實體為主。</p>
-                        <button type="button" class="btn btn-success"
-                            onclick="addToCart(8, '| 插畫明信片 | meow #暹羅-001', 45)">加入購物車</button>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product9.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 插畫小卡 | <br>殘肢系列*6入</h5>
-                        <p class="card-text">
-                            <span>NT$ 295</span>
-                            <br>
-                            ｜14.8 *10.5 cm<br>
-                            ｜9x7cm、9x9cm、9x11cm(各兩張)<br>
-                            ｜凝雪映畫270gsm，雙面印刷，正面局部光<br>
-                            ｜黑緞帶+打凹小吊牌<br>
-                            ｜拍照效果和螢幕影響可能造成色差，商品皆以實體為主。</p>
-                        <button type="button" class="btn btn-success"
-                            onclick="addToCart(9, '| 插畫小卡 | 殘肢系列*6入', 295)">加入購物車</button>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;">
-                    <img src="../images/product10.JPG" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">| 印刷帆布袋 | <br>沒有就不穿。</h5>
-                        <p class="card-text">
-                            <span>NT$ 405</span>
-                            <br>
-                            ｜12N帆布，米色<br>
-                            ｜約 34.5 * 38.5 cm，提把長約40 cm<br>
-                            ｜拍照效果和螢幕影響可能造成色差，商品皆以實體為主。</p>
-                        <button type="button" class="btn btn-secondary btn-lg" disabled>已售完</button>
-                    </div>
-                </div>
-            </div>
+            <div class="productData productFlex"></div>
+            <div class="soldout productFlex"></div>
         </content>
         <footer>
             <p>聯絡信箱：<a href="#" onclick="event.preventDefault();">somesortof.fern@gmail.com</a></p>
@@ -223,6 +62,7 @@
     </script>
     <script src="../jquery/dist/jquery.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/productData.js"></script>
 </body>
 
 </html>

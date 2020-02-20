@@ -3,22 +3,27 @@
 .logo {
     height: 200px;
     /* width: 70%; */
-    background-image: url(../images/logo.JPG);
+    background-image: url(../images/product/logo.JPG);
     background-size: contain;
     background-repeat: no-repeat;
     margin: 20px 20%;
 }
 
-.row {
+.productFlex {
+    width: 80%;
     margin: 10px auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
+    flex-wrap: wrap;
+    align-content: flex-start
 }
 
 .card {
     margin: 25px;
+    align-self: flex-start;
+    align-items: flex-start
 }
 
 .card-img-top {
