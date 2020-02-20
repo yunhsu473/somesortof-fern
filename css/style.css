@@ -52,6 +52,10 @@ header nav {
     float: right;
 }
 
+.fbFlex{
+    display: flex;
+}
+
 .showFb img {
     width: 50px;
     height: 50px;
