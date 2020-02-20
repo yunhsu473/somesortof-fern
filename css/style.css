@@ -1,17 +1,22 @@
 /* --------import------- */
 @import "index.css";
+@import "intro.css";
+@import "news.css";
+@import "cart.css";
+@import "product.css";
+
 
 /*-----------------body & wrap --------------------*/
 html,
 body {
     scroll-behavior: smooth;
+        background: linear-gradient(#fdfbfb, #ebedee);
 }
 
 body .wrap {
     font-family: Microsoft Jhenghei;
     background-size: cover;
     background-repeat: no-repeat;
-    background: linear-gradient(#fdfbfb, #ebedee);
 }
 
 
@@ -28,33 +33,21 @@ header nav {
     background: linear-gradient(#0ba360, #3cba92);
     height: 50px;
 }
-.nav-wrap.affix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
-.menuFixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-}
 
 .navbar-nav {
     width: 80%;
     margin: 5px auto;
 }
 
-
 .navbar-nav a {
     color: #fd7e14;
-    /* font-weight: 600; */
     font-size: 1.2em;
 }
 
 .navbar-nav a:hover {
     color: #6610f2;
 }
+
 .loginBtn {
     float: right;
 }
@@ -77,185 +70,6 @@ header nav {
     height: 44px;
 }
 
-/* --------intro-introduce-------- */
-
-
-
-
-
-
-.designer h3 {
-    margin-bottom: 30px;
-}
-
-.designImg2 {
-    background-image: url(../images/intro2.jpg);
-    height: 950px;
-    width: 600px;
-    float: right;
-    margin-right: 50px;
-    background-repeat: no-repeat;
-    box-shadow:0 0 10px 10px #fdfbfb;
-}
-
-.designer h4 {
-    margin-top: 60px;
-}
-
-.designer p {
-    margin-top: 20px;
-}
-
-.clearfix {
-    clear: both;
-}
-
-.caricature {
-    width: 80%;
-    margin: 10px auto;
-}
-
-
-.slider {
-    width: 500px;
-    height: 700px;
-    margin: 50px 30%;
-    /* transition: all 2s ease 2s;
-    transition: transform 2s ease,
-        opacity .5s ease-out */
-}
-
-
-/* -------product--------- */
-
-.logo {
-    height: 200px;
-    /* width: 70%; */
-    background-image: url(../images/logo.JPG);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 20px 20%;
-}
-
-.row {
-    margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
-}
-
-.card {
-    margin: 25px;
-}
-
-.card-img-top {
-    height: 400px;
-    transition: all 0.5s ease-out;
-}
-
-
-.card-text {
-    height: 160px;
-    font-size: 0.9em;
-}
-
-.card-text span {
-    font-size: 1.1em;
-}
-
-/* -----------news-------- */
-.newsBar {
-    background-image: url(../images/newsBar.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 400px;
-    margin: 20px 30%;
-}
-
-#news h2 {
-    margin: 10px 180px;
-
-}
-
-#news .accordion {
-    list-style-type: none;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-}
-
-#news .accordion li {
-    margin: 10px auto;
-}
-
-#news .accordion-panel {
-    display: none;
-}
-
-.accordion-panel img {
-    height: 400px;
-}
-
-#news button {
-    width: 1200px;
-    text-align: left;
-}
-
-/* -----------cart------------ */
-#cart .card-header {
-    margin: 5px 10%;
-}
-
-#cart .card-header ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#cart .card-header li {
-    flex: 1;
-}
-
-#cart .mb-3 {
-    margin: 5px 10%;
-}
-
-#cart .mb-3 ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#cart .mb-3 li {
-    margin: 5px 10px;
-    flex: 1;
-    margin-top: 50px;
-}
-
-#cart .mb-3 img {
-    width: 100px;
-    height: 100px;
-    float: left;
-}
-
-#cart .btn {
-    height: 40px;
-    width: 60px;
-}
-
-#cart .total {
-    float: right;
-    margin: 20px 5px;
-}
-
-#cart .totalBtn {
-    float: right;
-    margin: 15px;
-    margin-right: 10%;
-}
 
 /* --------footer------- */
 footer {
